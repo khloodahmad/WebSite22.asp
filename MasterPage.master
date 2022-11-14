@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+     <style>
+        ul {
+        list-style-type: none;
+        padding: 0; margin:0;
+        overflow: hidden;
+        background: #966c17;
+        }
+        li {
+        float: right;
+        }
+        li a{
+        display: inline-block;
+        color:white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration:none;
+        }
+        li a:hover{
+        background-color:black;
+        }
+        .ac{
+        background-color:red;
+        }
+           </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <ul>
+     <li><a class="ac" href="home.aspx"> الرئيسية</a></li>
+     <li><a href="CLINCS.aspx"> المراكز الطبية والعيادات</a></li>
+     <li><a href="Registration.aspx">تسجيل البيانات</a></li>
+     <li><a href="Doctors.aspx"> الكادر الطبي</a></li>
+      <li><a href=" sections.aspx">الاقسام</a></li> 
+         <li><a href="about.aspx"> من نحن</a></li>
+     <li><a href="masseg.aspx"> رسالتنا واهدافنا</a></li>
+<li><a href="commnn.aspx"> تواصل معنا</a></li>
+
+
+    </ul>
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+
